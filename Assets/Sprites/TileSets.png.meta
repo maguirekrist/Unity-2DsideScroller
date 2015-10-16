@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 07f66abe4e3f20349b93253cf8d4fd99
-timeCreated: 1444484238
+timeCreated: 1444576669
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -28,10 +28,10 @@ TextureImporter:
     21300042: TileSets_21
     21300044: TileSets_22
     21300046: TileSets_23
-    21300048: TileSets_24
-    21300050: TileSets_25
-    21300052: TileSets_26
-    21300054: TileSets_27
+    21300048: RewardTile1
+    21300050: RewardTile2
+    21300052: RewardTile3
+    21300054: RewardTile4
     21300056: TileSets_28
     21300058: TileSets_29
     21300060: TileSets_30
@@ -900,7 +900,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TileSets_24
+    - name: RewardTile1
       rect:
         serializedVersion: 2
         x: 384
@@ -910,7 +910,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TileSets_25
+    - name: RewardTile2
       rect:
         serializedVersion: 2
         x: 400
@@ -920,7 +920,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TileSets_26
+    - name: RewardTile3
       rect:
         serializedVersion: 2
         x: 416
@@ -930,7 +930,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TileSets_27
+    - name: RewardTile4
       rect:
         serializedVersion: 2
         x: 432

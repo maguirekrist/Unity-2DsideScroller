@@ -9,7 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 441016}
   - 212: {fileID: 21290904}
-  - 61: {fileID: 6127954}
+  - 114: {fileID: 11468618}
+  - 61: {fileID: 6108738}
+  - 68: {fileID: 6826372}
   m_Layer: 15
   m_Name: Platform_1
   m_TagString: Untagged
@@ -29,8 +31,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!61 &6127954
+--- !u!61 &6108738
 BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132478}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00547355413, y: -.0589991808}
+  serializedVersion: 2
+  m_Size: {x: .0721565485, y: .0701802969}
+--- !u!68 &6826372
+EdgeCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -40,8 +55,24 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: .159999996, y: .159999996}
+  m_Points:
+  - {x: -.0799558014, y: .0796163529}
+  - {x: .00851286575, y: .0795907378}
+  - {x: .0798742622, y: .0798615813}
+  - {x: .0796591416, y: -.0797508359}
+  - {x: -.0804265589, y: -.0796800852}
+  - {x: -.0792523772, y: .0792206228}
+--- !u!114 &11468618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa54a8bfb4a2544fb2fd593c4f94f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21290904
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -82,6 +113,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_SortingLayerID
       value: 404910065
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 193170, guid: 4c85c9f4441a3a84eb9e42c248b6f750, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

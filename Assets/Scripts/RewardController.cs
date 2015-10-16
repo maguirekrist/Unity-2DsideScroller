@@ -40,7 +40,6 @@ public class RewardController : MonoBehaviour {
     {
         if(other.name == "Player" && !rewarded)
         {
-
             Reward();    
         }
     }
@@ -49,5 +48,6 @@ public class RewardController : MonoBehaviour {
     {
         Instantiate(rewardObject, new Vector3(rewardTransform.position.x, rewardTransform.position.y, rewardTransform.position.z), Quaternion.identity);
         rewarded = true;
+        GetComponent<Animator>().SetBool("rewarded", true);
     }
 }

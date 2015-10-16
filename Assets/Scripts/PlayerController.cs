@@ -13,6 +13,14 @@ public class PlayerController : MonoBehaviour {
     private bool grounded; // Not accessable in editor or by other classes!
     private bool facingRight = true;
 
+    public bool isBig = false;
+
+    // Top Checking
+    public Transform topCheck;
+    public float topCheckRadius;
+    public LayerMask whatIsPlatform;
+    private bool isTopChecking;
+
 
     //Animator
     private Animator anim; // Allows us to use the animator in code
@@ -32,6 +40,9 @@ public class PlayerController : MonoBehaviour {
         {
             anim.SetBool("grounded", false);
         }
+
+        isTopChecking = Physics2D.OverlapCircle(topCheck.position, topCheckRadius, whatIsPlatform);
+        
 
     }
 	

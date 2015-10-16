@@ -1,11 +1,12 @@
 fileFormatVersion: 2
 guid: ab6d536db7e156140ac027770a9089a9
-timeCreated: 1444482406
+timeCreated: 1444957150
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Enemies_0
     21300002: Enemies_1
+    21300004: Enemies_death
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -66,6 +67,16 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemies_death
+      rect:
+        serializedVersion: 2
+        x: 32
         y: 96
         width: 16
         height: 16

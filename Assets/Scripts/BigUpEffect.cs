@@ -6,6 +6,7 @@ public class BigUpEffect : MonoBehaviour {
     public bool moveRight;
     public float moveSpeed;
 
+
 	// Use this for initialization
 	void Start () {
 	    
@@ -27,12 +28,12 @@ public class BigUpEffect : MonoBehaviour {
     {
         if(other.name == "Player")
         {
-            GiveEffect();
+            other.GetComponent<Animator>().SetBool("isBig", true);
+            other.GetComponent<CircleCollider2D>().radius = 0.15f;
+            other.GetComponent<BoxCollider2D>().size = new Vector2(0.18f, 0.31f);
+            other.GetComponent<BoxCollider2D>().offset = new Vector2(0f, 0.01f);
+            other.GetComponent<PlayerController>().isBig = true;
+            Destroy(gameObject);
         }
-    }
-
-    void GiveEffect()
-    {
-        Destroy(gameObject);
     }
 }

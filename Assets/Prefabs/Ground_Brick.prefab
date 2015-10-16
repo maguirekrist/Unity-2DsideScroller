@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 485568}
   - 212: {fileID: 21286194}
-  - 61: {fileID: 6107342}
+  - 68: {fileID: 6820982}
   m_Layer: 15
   m_Name: Ground_Brick
   m_TagString: Untagged
@@ -24,24 +24,25 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .671000004, y: -.962000012, z: 0}
+  m_LocalPosition: {x: .180201143, y: -.328895152, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!61 &6107342
-BoxCollider2D:
+--- !u!68 &6820982
+EdgeCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123862}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 027ea719dd5a4ec45ba7b3c5ee967364, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: .159999996, y: .159999996}
+  m_Points:
+  - {x: -.0796626955, y: .0808311701}
+  - {x: .0793544352, y: .0808311403}
 --- !u!212 &21286194
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -79,6 +80,10 @@ Prefab:
       propertyPath: m_SortingLayerID
       value: 404910065
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 027ea719dd5a4ec45ba7b3c5ee967364, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 123862}
