@@ -6,6 +6,9 @@ public class PlayerController : MonoBehaviour {
     public float MoveSpeed;
     public float JumpHeight;
 
+    // Player physics
+    public PhysicsMaterial2D playerMaterial;
+
     //Ground Checking
     public Transform groundCheck;
     public float groundCheckRadius;
@@ -36,9 +39,11 @@ public class PlayerController : MonoBehaviour {
         if(grounded)
         {
             anim.SetBool("grounded", true);
+            playerMaterial.friction = 1;
         } else
         {
             anim.SetBool("grounded", false);
+            playerMaterial.friction = 0;
         }
 
         isTopChecking = Physics2D.OverlapCircle(topCheck.position, topCheckRadius, whatIsPlatform);
@@ -71,6 +76,7 @@ public class PlayerController : MonoBehaviour {
             anim.SetBool("moving", true);
         } else
         {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, GetComponent<Rigidbody2D>().velocity.y);
             anim.SetBool("moving", false);
         }
 

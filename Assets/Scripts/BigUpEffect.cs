@@ -33,6 +33,7 @@ public class BigUpEffect : MonoBehaviour {
             other.GetComponent<BoxCollider2D>().size = new Vector2(0.18f, 0.31f);
             other.GetComponent<BoxCollider2D>().offset = new Vector2(0f, 0.01f);
             other.GetComponent<PlayerController>().isBig = true;
+            other.GetComponent<PlayerController>().groundCheck.position = new Vector2(other.GetComponent<PlayerController>().groundCheck.position.x, other.GetComponent<PlayerController>().groundCheck.position.y - 0.05f);
             Destroy(gameObject);
         }
     }
